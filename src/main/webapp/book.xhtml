@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html">
+
+<h:head>
+    <h:outputStylesheet library="css" name="style.css"/>
+</h:head>
+
+
+<h:body bgcolor="white">
+    <f:view>
+        <h:form>
+            <h:messages/>
+            <h:panelGrid columns="2">
+                <h:outputText value='Enter book title'/>
+                <h:inputText value='#{bookBean.bookTitle}' required="true"/>
+                <h:outputText value='Add'/>
+                <h:commandButton action="#{bookBean.add}" value="Add"/>
+            </h:panelGrid>
+        </h:form>
+    </f:view>
+</h:body>
+</html>
